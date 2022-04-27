@@ -7,7 +7,11 @@
 body {
     width: 750px;
     height: 1000px;
-    background: black;
+    background-color: black;
+    background-image: url(https://raw.githubusercontent.com/MrGoku92/sourcesfw/main/2432677.png?token=GHSAT0AAAAAABT7CXRJPW5RYEOOVDHDO7SIYTIUJGA);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-family: sans-serif;
     margin: auto;
@@ -24,10 +28,6 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
-}
-
-header .logo {
-    
 }
 
 nav {
