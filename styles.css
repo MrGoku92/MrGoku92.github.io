@@ -8,10 +8,6 @@ body {
     width: 750px;
     height: 1000px;
     background-color: black;
-    background-image: url(imagen-teclado.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     font-family: sans-serif;
     margin: auto;
@@ -28,6 +24,11 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+}
+
+.logo a {
+    font-size: 40px;
+    color: white;
 }
 
 nav {
@@ -49,7 +50,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: grey;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 article {
@@ -58,8 +62,20 @@ article {
     margin: 5%;
 }
 
-article h1, p {
+article h1, p, h4 {
     margin: 20px;
+}
+
+article h1 {
+    font-size: 30px;
+}
+
+article p {
+    font-size: 20px;
+}
+
+article h4 {
+    font-size: 15px;
 }
 
 footer {
@@ -71,6 +87,7 @@ footer {
     align-items: center;
 }
 
-footer h1 {
-    background-color: black;
+footer:hover {
+    border-top: 1px solid white;
+    transition: 1s;
 }

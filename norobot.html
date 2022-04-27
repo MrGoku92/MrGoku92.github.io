@@ -13,15 +13,17 @@
         <nav>
             <ul>
                 <li><a href="informacion.html">Información</a></li>
-                <li><a href="norobot.html">Verificar si eres un robot</a></li>
+                <li><a href="#">Verificar si eres un robot</a></li>
             </ul>
         </nav>
         </header>
         <main>
             <article>
-                <h1>¿Por qué Saitama le gana a Goku?</h1>
-                <p>Mientras Goku ha tenido que usar máquinas de gravedad y entrenar infinidad de veces con sus amigos e hijo para poder llegar al límite de sus poderes, Saitama, por su parte, nunca ha tenido que pasar por nada de esto, su poder y fuerza son tal que con un entrenamiento más tradicional es tan o más fuerte que Goku.</p>
-                <h4>Fuente: Tuvieja</h4>
+                <form method="post" action="robot.php">
+                <label>¿Eres un robot? Responde con "Si" o "No"</label>
+                <input type="text" name="rob" required>
+                <input type="submit" value="Enviar respuesta">
+                </form>
             </article>
         </main>
         <footer>
