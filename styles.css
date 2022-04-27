@@ -8,7 +8,7 @@ body {
     width: 750px;
     height: 1000px;
     background-color: black;
-    background-image: url(https://raw.githubusercontent.com/MrGoku92/sourcesfw/main/2432677.png?token=GHSAT0AAAAAABT7CXRJPW5RYEOOVDHDO7SIYTIUJGA);
+    background-image: url(imagen-teclado.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,9 +68,9 @@ footer {
     bottom: 0;
     position: absolute;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 footer h1 {
-    margin: 20px;
+    background-color: black;
 }
