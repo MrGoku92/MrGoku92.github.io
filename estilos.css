@@ -7,14 +7,37 @@
     width: 100%;
     min-height: 100vh;
     font-family: sans-serif;
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row;
-    align-items: center;
     background: url(imagenes/bg.PNG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+header h1 {
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+    align-items: center;
 }
 
 article {
@@ -64,8 +87,28 @@ aside span a {
     text-decoration: none;
 }
 
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .sociales {
+    border: 1px solid;
+    padding: 5px;
+}
+
+footer .sociales a  {
+    color: white;
+}
+
 @media (max-width: 900px) {
-    .contenedor {
+    section {
         flex-flow: column;
     }
 }
