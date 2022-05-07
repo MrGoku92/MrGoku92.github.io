@@ -7,7 +7,7 @@
 
 .contenedor {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
     background: black;
     position: relative;
@@ -22,9 +22,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     top: 0;
-    box-shadow: 1px 1px 10px white;
+    position: absolute;
+    padding: 15px
 }
 
 header h1 {
@@ -33,18 +33,18 @@ header h1 {
 }
 
 section {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     flex-flow: row;
     align-items: center;
+    margin: auto;
 }
 
 article {
     width: 300px;
     height: 200px;
-    box-shadow: 1px 1px 10px white;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -54,7 +54,6 @@ article {
 article span {
     width: auto;
     height: auto;
-    box-shadow: 1px 1px 10px white;
     margin: 5px;
     color: white;
     background-color: black;
@@ -62,10 +61,17 @@ article span {
     padding: 5px;
 }
 
+.ba {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 aside {
     width: 300px;
     height: 200px;
-    box-shadow: 1px 1px 10px white;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -75,7 +81,6 @@ aside {
 aside span {
     width: auto;
     height: auto;
-    box-shadow: 1px 1px 10px white;
     margin: 5px;
     color: white;
     background-color: black;
@@ -97,7 +102,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 10px white;
     padding: 15px;
 }
 
@@ -122,6 +126,11 @@ footer .sociales a  {
     article {
         width: auto;
         height: auto;
+    }
+    
+    .ba {
+        height: auto;
+        width: auto;
     }
     
     aside {
