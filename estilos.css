@@ -29,6 +29,7 @@ header {
 
 header h1 {
     color: white;
+    text-align: center;
 }
 
 section {
@@ -97,6 +98,7 @@ footer {
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 10px white;
+    padding: 15px;
 }
 
 footer .sociales {
@@ -111,5 +113,23 @@ footer .sociales a  {
 @media (max-width: 900px) {
     section {
         flex-flow: column;
+    }
+    
+    header {
+        height: auto;
+    }
+    
+    article {
+        width: auto;
+        height: auto;
+    }
+    
+    aside {
+        width: auto;
+        height: auto;
+    }
+    
+    footer {
+        height: auto;
     }
 }
