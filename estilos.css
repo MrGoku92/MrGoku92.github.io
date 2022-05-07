@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 * {
     padding: 0;
     margin: 0;box-sizing: border-box;
@@ -6,11 +8,8 @@
 .contenedor {
     width: 100%;
     min-height: 100vh;
-    font-family: sans-serif;
-    background: url(imagenes/bg.PNG);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    background: black;
     position: relative;
     display: flex;
     justify-content: center;
@@ -25,6 +24,7 @@ header {
     align-items: center;
     position: absolute;
     top: 0;
+    box-shadow: 1px 1px 10px white;
 }
 
 header h1 {
@@ -43,7 +43,7 @@ section {
 article {
     width: 300px;
     height: 200px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px white;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@ article {
 article span {
     width: auto;
     height: auto;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px white;
     margin: 5px;
     color: white;
     background-color: black;
@@ -64,7 +64,7 @@ article span {
 aside {
     width: 300px;
     height: 200px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px white;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -74,7 +74,7 @@ aside {
 aside span {
     width: auto;
     height: auto;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px white;
     margin: 5px;
     color: white;
     background-color: black;
@@ -96,6 +96,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 10px white;
 }
 
 footer .sociales {
