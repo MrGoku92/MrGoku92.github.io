@@ -1,15 +1,40 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
+
 body {
-    background-color: black;
-    color: lawngreen;
-    font-family: Lucida Console;
+    width: 100%;
+    height: 100vh;
+    background-color: dimgrey;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    font-family: sans-serif;
 }
+
+.contenedor {
+    width: 250px;
+    height: 225px;
+    display: flex;
+    flex-flow: row;
+    box-shadow: 1px 1px 5px black;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.contenedor .div1 {
+    height: 200px;
+    min-width: 200px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.contenedor .div1 img {
+    width: 100%;
+    height: 100%;
+}
+
