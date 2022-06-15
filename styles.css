@@ -6,38 +6,60 @@
 
 html {
     height: 100%;
-    background-color: #333;
+    background-color: #222;
+    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
-    width: 1000px;
-    background-color: #333;
+    width: 100%;
+    background-color: #222;
     margin: auto;
     font-family: sans-serif;
     font-size: 20px;
     color: white;
 }
 
-header {
-    height: 75px;
+section {
+    height: 100vh;
     width: 100%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #222;
 }
 
-header h1 {
-    font-size: 3rem;
-    color: white;
-    font-family: monospace;
+#enlaces {
+    position: fixed;
+    top: 40%;
+    right: 5px;
+}
+
+#enlaces ul {
+    display: flex;
+    flex-flow: column;
+}
+
+#enlaces ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+#enlaces ul li a {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border: 5px solid white;
+    color: black;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#enlaces ul li a:hover {
+    transform: scale(1.5);
+    transition: 0.2s;
 }
 
 main {
     width: 100%;
     height: 100%;
-    background-color: #333;
 }
 
 img {
@@ -61,7 +83,7 @@ img {
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    background-color: #333;
+    background-color: #222;
 }
 
 
