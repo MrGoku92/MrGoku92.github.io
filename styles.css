@@ -6,8 +6,6 @@
 
 html {
     height: 100%;
-    background-color: #222;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -26,47 +24,12 @@ section {
     background-color: #222;
 }
 
-#enlaces {
-    position: fixed;
-    top: 40%;
-    right: 5px;
-}
-
-#enlaces ul {
-    display: flex;
-    flex-flow: column;
-}
-
-#enlaces ul li {
-    list-style: none;
-    padding: 5px;
-}
-
-#enlaces ul li a {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    border: 5px solid white;
-    color: black;
-    border-radius: 50%;
-    transition: 0.2s;
-}
-
-#enlaces ul li a:hover {
-    transform: scale(1.5);
-    transition: 0.2s;
-}
-
 main {
     width: 100%;
     height: 100%;
 }
 
-img {
-    width: 300px;
-}
-
-.a, .b, .c, .d, .e, .f {
+.a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -75,7 +38,7 @@ img {
     padding: 50px;
 }
 
-.a span, .b span, .c span, .d span, .e span, .f span {
+.a span {
     width: auto;
     height: auto;    
     padding: 15px;
