@@ -22,6 +22,7 @@ body {
     background-size: cover;
     display: flex;
     flex-flow: column;
+    background-repeat: no-repeat;
 }
 
 header {
