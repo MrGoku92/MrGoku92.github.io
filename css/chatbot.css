@@ -1,0 +1,195 @@
+#chatbot-body {
+    overflow-x: hidden;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.section-info {
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    width: 90%;
+}
+
+.section-info h1, p {
+    text-align: center;
+}
+
+.chatbot {
+    display: flex;
+    flex-flow: column;
+    width: 222px;
+    height: 400px;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chatbot .header {
+    width: 100%;
+    background-color: royalblue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.chatbot .header .fa-x {
+    transition: .7s;
+}
+
+.chatbot .header .fa-x:hover {
+    transform: rotate(180deg);
+}
+
+.chatbot .chat {
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    gap: 7px;
+}
+
+.label-pre {
+    background-color: royalblue;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.label-opcion {
+    background-color: #111;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: right;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.label-opcion:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.label-resp {
+    background-color: royalblue;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#chatbot {
+    display: none;
+}
+
+#chatbot:checked ~ main .chatbot {
+    right: -222px;
+}
+
+#close-chatbot {
+    cursor: pointer;
+}
+
+#open-chatbot {
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-0, -50%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+#open-chatbot:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.label-resp1, .label-resp2, .label-resp3, .label-resp0 {
+    display: none;
+}
+
+.label-resp3-1 {
+    visibility: hidden;
+}
+
+#opcion0:checked ~ main .chatbot .label-opcion1 {
+    display: none;
+}
+
+#opcion0:checked ~ main .chatbot .label-opcion2 {
+    display: none;
+}
+
+#opcion0:checked ~ main .chatbot .label-opcion3 {
+    display: none;
+}
+
+#opcion0:checked ~ main .chatbot .label-resp0 {
+    display: inherit;
+}
+
+#opcion1:checked ~ main .chatbot .label-opcion0 {
+    display: none;
+}
+
+#opcion1:checked ~ main .chatbot .label-opcion2 {
+    display: none;
+}
+
+#opcion1:checked ~ main .chatbot .label-opcion3 {
+    display: none;
+}
+
+#opcion1:checked ~ main .chatbot .label-resp1 {
+    display: inherit;
+}
+
+#opcion2:checked ~ main .chatbot .label-opcion0 {
+    display: none;
+}
+
+#opcion2:checked ~ main .chatbot .label-opcion1 {
+    display: none;
+}
+
+#opcion2:checked ~ main .chatbot .label-opcion3 {
+    display: none;
+}
+
+#opcion2:checked ~ main .chatbot .label-resp2 {
+    display: inherit;
+}
+
+#opcion3:checked ~ main .chatbot .label-opcion0 {
+    display: none;
+}
+
+#opcion3:checked ~ main .chatbot .label-opcion1 {
+    display: none;
+}
+
+#opcion3:checked ~ main .chatbot .label-opcion2 {
+    display: none;
+}
+
+#opcion3:checked ~ main .chatbot .label-resp3 {
+    display: inherit;
+}
